@@ -12,6 +12,14 @@
   font-style: normal;
 }
 @font-face {
+  font-family: myriadprol;
+  src: url("fonts/myriadprol.woff");
+}
+@font-face {
+  font-family: myriadpror;
+  src: url("fonts/myriadpror.woff");
+}
+@font-face {
   font-family: proximanova;
   src: url(../fonts/proxnlight.eot);
   src: url(../fonts/proxnlight.eot) format("embedded-opentype"),
@@ -384,7 +392,14 @@ nav.scroll .logo span.text {
   transition: opacity 0.4s ease;
 }
 .sign-up a {
-  margin-top: -5px;
+  background-color: #4286ec;
+  padding: 16px 24px 16px 68px;
+  border-radius: 4px;
+  color: #fff;
+  background-image: url(../img/chrw.svg);
+  background-repeat: no-repeat;
+  background-size: 42px;
+  background-position: 16px 50%;
   display: inline-block;
   line-height: 1.2em;
   text-align: left;
@@ -476,6 +491,7 @@ nav.scroll .logo span.text {
 .call img {
   max-width: 100%;
   height: auto;
+  margin: 24px auto -120px auto;
 }
 .call .slack {
   background-image: url(../img/slack.svg);
@@ -529,9 +545,6 @@ nav.scroll .logo span.text {
   margin: 0 auto 16px auto;
   color: #fff;
 }
-call {
-  color: #fff;
-}
 .do-more h2 {
   margin: 0 auto 32px 0;
 }
@@ -546,6 +559,7 @@ call {
 .pricing img {
   max-width: 100%;
   height: auto;
+  margin: 24px auto -120px auto;
 }
 .pricing .slack {
   background-image: url(../img/slack.svg);
@@ -590,7 +604,7 @@ call {
 .pricing p {
   display: inline-block;
   line-height: 1em;
-  color: #ffffff;
+  color: #1f2634;
 }
 .pricing p span {
   color: #8693af;
@@ -796,7 +810,7 @@ footer .fm a span {
 }
 span.highlighted-title {
   background-color: #ffe87e;
-  color: #bfa941;
+  color: #1b1b1b;
   padding: 10px 7px;
   line-height: 240%;
   font-weight: 600;
@@ -878,31 +892,6 @@ ul.footer-nav li a {
   right: -5px;
   top: -6px;
   display: block;
-}
-.download a {
-  font-size: 12px;
-  background-color: #000000;
-  padding: 5px 5px 5px 40px;
-  border-radius: 4px;
-  color: #fff;
-  background-image: url(../img/chrw.svg);
-  background-repeat: no-repeat;
-  background-size: 22px;
-  background-position: 12px 50%;
-  display: inline-block;
-  line-height: 1.2em;
-  text-align: left;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.download a span {
-  font-size: 10px;
-  display: block;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.ios-download {
-  margin-top: -12.9px;
 }
 @media only screen and (min-width: 980px) {
   body {
@@ -1055,7 +1044,7 @@ ul.footer-nav li a {
 }
 @media only screen and (max-width: 980px) {
   .blue img {
-    display: none;
+    display: block;
   }
   nav.scroll .sign-up {
     display: none;
